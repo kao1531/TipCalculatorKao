@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Basic Calculator"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="35sp"
+        />
+
+    <EditText
+        android:id="@+id/num1EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="num1"
+        />
+
+    <EditText
+        android:id="@+id/num2EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="num2"
+        />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:onClick="add"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/subtButton"
+        android:text="SUBTRACT"
+        android:onClick="subt"
+        />
+
+    <TextView
+        android:id="@+id/ansTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"/>
+
+</LinearLayout>
