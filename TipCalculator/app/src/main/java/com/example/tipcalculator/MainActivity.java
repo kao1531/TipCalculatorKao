@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         EditText tipPercentEditText = (EditText) findViewById(R.id.tipPercentEditText);
         TextView finalTextView = (TextView) findViewById(R.id.finalAmountTextView);
         TextView tipTextView = (TextView) findViewById(R.id.tipTextView);
-        TextView percentTextView = (TextView) findViewById(R.id.emojiTipTextView);
 
         double bill = Double.parseDouble(billCostEditText.getText().toString());
 
@@ -51,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
         finalTextView.setText("Final Bill Amount: " + df.format(total));
         tipTextView.setText("Tip Amount: " + df.format(tip));
-        percentTextView.setText("Tip Percent: 20%");
+        tipPercentEditText.setText("20");
     }
 
     public void neutralTip (View v)
@@ -61,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
         EditText tipPercentEditText = (EditText) findViewById(R.id.tipPercentEditText);
         TextView finalTextView = (TextView) findViewById(R.id.finalAmountTextView);
         TextView tipTextView = (TextView) findViewById(R.id.tipTextView);
-        TextView percentTextView = (TextView) findViewById(R.id.emojiTipTextView);
 
         double bill = Double.parseDouble(billCostEditText.getText().toString());
 
@@ -70,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
         finalTextView.setText("Final Bill Amount: " + df.format(total));
         tipTextView.setText("Tip Amount: " + df.format(tip));
-        percentTextView.setText("Tip Percent: 15%");
+        tipPercentEditText.setText("15");
     }
 
     public void sadTip (View v)
@@ -80,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
         EditText tipPercentEditText = (EditText) findViewById(R.id.tipPercentEditText);
         TextView finalTextView = (TextView) findViewById(R.id.finalAmountTextView);
         TextView tipTextView = (TextView) findViewById(R.id.tipTextView);
-        TextView percentTextView = (TextView) findViewById(R.id.emojiTipTextView);
 
         double bill = Double.parseDouble(billCostEditText.getText().toString());
 
@@ -89,6 +86,6 @@ public class MainActivity extends AppCompatActivity {
 
         finalTextView.setText("Final Bill Amount: " + df.format(total));
         tipTextView.setText("Tip Amount: " + df.format(tip));
-        percentTextView.setText("Tip Percent: 10%");
+        tipPercentEditText.setText("10");
     }
 }
